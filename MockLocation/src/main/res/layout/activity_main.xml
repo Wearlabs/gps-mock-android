@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
             android:layout_weight="0"
             android:padding="0dp"
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="0dp"
             android:layout_weight="1"
             android:text="@string/unknown_string_value"
@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
             android:layout_weight="0"
             android:text="@string/connection_status_label"
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="0dp"
             android:layout_weight="1"
             android:text="@string/unknown_string_value"
@@ -108,10 +108,11 @@
             android:id="@+id/pause_entry_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_marginBottom="5dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
+            android:labelFor="@+id/pause_value"
             android:text="@string/pause_entry_label"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -121,9 +122,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/pause_entry_label"
-            android:layout_toRightOf="@+id/pause_entry_label"
+            android:layout_toEndOf="@+id/pause_entry_label"
             android:inputType="number"
-            android:text="5" />
+            android:text="@string/default_pause_value" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -138,10 +139,11 @@
             android:id="@+id/send_interval_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_marginBottom="5dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
+            android:labelFor="@+id/send_interval_value"
             android:text="@string/send_entry_label"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -151,9 +153,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/send_interval_label"
-            android:layout_toRightOf="@+id/send_interval_label"
+            android:layout_toEndOf="@+id/send_interval_label"
             android:inputType="number"
-            android:text="3" />
+            android:text="@string/default_send_interval_value" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -168,10 +170,11 @@
             android:id="@+id/mock_id_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_marginBottom="5dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
+            android:labelFor="@+id/mock_id_value"
             android:text="@string/mock_id_label"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -181,9 +184,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/mock_id_label"
-            android:layout_toRightOf="@+id/mock_id_label"
+            android:layout_toEndOf="@+id/mock_id_label"
             android:inputType="text"
-            android:text="default" />
+            android:text="@string/default_mock_id_value" />
     </RelativeLayout>
 
     <!--

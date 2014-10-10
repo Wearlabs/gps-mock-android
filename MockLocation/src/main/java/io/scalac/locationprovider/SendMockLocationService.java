@@ -19,6 +19,7 @@ package io.scalac.locationprovider;
 import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
@@ -346,7 +347,7 @@ public class SendMockLocationService extends Service implements
 
     private TestLocation[] downloadLocation(String mockId) {
         DataDownloader downloader = new DataDownloader();
-        String jsonStr = downloader.downloadFromUrl(Properties.getString("location_url", "") + "?id=" + mockId);
+        String jsonStr = downloader.downloadFromUrl(getResources().getString(R.string.location_url) + "?id=" + mockId);
 
         double[] lat = new double[1];
         double[] lng = new double[1];

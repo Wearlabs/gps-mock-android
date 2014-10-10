@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location_url">http://fieldsofwar.co/location_provider/location_mock.php</string>
+</resources>

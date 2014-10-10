@@ -57,9 +57,6 @@ public class MainActivity extends FragmentActivity {
     // Handle to app status reporting field in UI
     public TextView mAppStatus;
 
-    // Broadcast receiver for local broadcasts from SendMockLocationService
-    private ServiceMessageReceiver mMessageReceiver;
-
     // Handle to input field for the interval to wait before starting mock location testing
     private EditText mPauseInterval;
 
@@ -107,7 +104,7 @@ public class MainActivity extends FragmentActivity {
         mActivityIndicator = (ProgressBar) findViewById(R.id.testing_activity_indicator);
 
         // Instantiate a broadcast receiver for Intents coming from the Service
-        mMessageReceiver = new ServiceMessageReceiver();
+        ServiceMessageReceiver mMessageReceiver = new ServiceMessageReceiver();
 
         /*
          * Filter incoming Intents from the Service. Receive only Intents with a particular action

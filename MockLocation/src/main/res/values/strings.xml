@@ -15,9 +15,7 @@
 -->
 <resources>
 
-    <string name="app_name">Mock Location Tester</string>
-    <string name="action_settings">Settings</string>
-    <string name="manage_mock_testing_banner">Manage mock location testing</string>
+    <string name="app_name">Mock Location</string>
     <string name="one_run_button_text">Run once</string>
     <string name="location_test_finish">Test run finished</string>
     <string name="app_status_label">App status:</string>
@@ -25,18 +23,10 @@
     <string name="unknown_string_value">--unknown--</string>
     <string name="testing_started">Location testing started</string>
     <!-- Latitude, longitude format -->
-    <string name="latlng">%1$.8f, %2$.8f</string>
     <string name="disconnected">Client disconnected</string>
     <string name="connected">Client connected</string>
     <string name="connection_failure">Client connection failed, error code %1$d</string>
     <string name="run_continuous_button_text">Run</string>
-    <string name="label_latlng">Lat/Long:</string>
-    <string name="label_elapsed_time">Elapsed time:</string>
-    <string name="label_clock_time">Clock time:</string>
-    <string name="label_accuracy">Accuracy:</string>
-    <string name="elapsed_time">%1$,d seconds since boot</string>
-    <string name="clock_time">yyyy_MM_dd kk:mm UTCZ</string>
-    <string name="accuracy">%1$.2f</string>
     <string name="stop_test_button_text">Stop</string>
     <string name="pause_entry_label">Pause before test (secs): </string>
     <string name="send_entry_label">Send interval (secs):</string>
@@ -56,4 +46,9 @@
 
     <string name="mock_id_label">Mock ID</string>
     <string name="mock_id_empty">No value for mock id</string>
+
+    <!-- default values -->
+    <string name="default_pause_value">5</string>
+    <string name="default_send_interval_value">2</string>
+    <string name="default_mock_id_value">default</string>
 </resources>
