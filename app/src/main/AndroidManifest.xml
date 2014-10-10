@@ -1,7 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="io.scalac.locationprovider">
 
-    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -27,7 +30,7 @@
             android:name="SendMockLocationService"
             android:enabled="true"
             android:exported="false"
-            android:icon="@drawable/ic_launcher"></service>
+            android:icon="@drawable/ic_launcher" />
 
         <meta-data
             android:name="com.google.android.gms.version"
